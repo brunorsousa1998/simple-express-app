@@ -15,7 +15,7 @@
     "typescript": "^4.0.3"
   },
   "scripts": {
-    "start": "pm2 delete mapa & pm2 start build/src/index.js --name mapa ",
+    "start": "pm2 delete mapa && pm2 start build/src/index.js --name mapa ",
     "start:dev": "nodemon src/index.ts",
     "lint": "gts lint",
     "clean": "gts clean",
