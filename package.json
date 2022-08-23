@@ -16,7 +16,8 @@
   },
   "scripts": {
     "prestart": "pm2 delete mapa || :",
-    "start": "pm2 start build/src/index.js --name mapa ",
+    "start": "pm2 start build/src/index.js --name mapa",
+    "poststart": "pm2 save",
     "start:dev": "nodemon src/index.ts",
     "lint": "gts lint",
     "clean": "gts clean",
